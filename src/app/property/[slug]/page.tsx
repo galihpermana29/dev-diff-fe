@@ -27,9 +27,9 @@ async function getProperty(slug: string): Promise<Property | null> {
 export default async function PropertyDetail({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const property = await getProperty(params.slug);
+  const property = await getProperty((await params).slug);
 
   if (!property) {
     notFound();
