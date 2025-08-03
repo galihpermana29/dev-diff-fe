@@ -117,17 +117,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 - Add map integration for property locations
 - Implement property comparison feature
 
-## Additional Resources
-
-- [Sanity Documentation](https://www.sanity.io/docs)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [GROQ Query Language](https://www.sanity.io/docs/groq)
-- [Portable Text](https://www.sanity.io/docs/presenting-block-text)
-
-## Contributing
-
-Contributions to this project are welcome. Please ensure you follow the existing code style and submit pull requests for any new features or bug fixes.
-
 ## License
 
-This project is licensed under the UNLICENSED license as specified in the package.json file.
+This project is licensed under the MIT License - see the LICENSE file for details.
