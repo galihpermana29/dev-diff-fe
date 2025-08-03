@@ -2,6 +2,7 @@ import Image from "next/image";
 import { client } from "../sanity/client";
 import { type Property, Header, Footer } from "../components";
 import HomepageListedClient from "../view/HomepageListedClient";
+import Link from "next/link";
 
 // Fetch all published property items
 async function getAllProperties(): Promise<Property[]> {
@@ -41,12 +42,16 @@ export default async function Home() {
               with trusted agents — all in one seamless experience.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium transition-colors">
-                Explore Listings
-              </button>
-              <button className="bg-white text-green-800 px-6 py-3 rounded-md font-medium transition-colors hover:bg-gray-100">
-                List your property
-              </button>
+              <Link href="/property">
+                <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium transition-colors">
+                  Explore Listings
+                </button>
+              </Link>
+              <Link href="https://galih29.sanity.studio" target="_blank">
+                <button className="bg-white text-green-800 px-6 py-3 rounded-md font-medium transition-colors hover:bg-gray-100">
+                  List your property
+                </button>
+              </Link>
             </div>
           </div>
           <div className="relative h-64 md:h-auto">
